@@ -169,6 +169,7 @@
     .navbar{
         background:#fafafa !important;
     }
+    
      @media only screen and (max-width: 970px){
          .banner
          {
@@ -234,7 +235,7 @@
     </header>
     
     
-    <div class="container-fluid p-5 text-light" id="about_me">
+    <div class="container-fluid p-5 text-light" id="about_me" >
         <div class="row justify-content-center">
             <div class="col-12 text-center mb-2">
                 <h2 class="font-weight-bolder heading" data-aos="fade-in">ABOUT ME</h2>
@@ -242,7 +243,7 @@
             </div>
             
             <div class="col-md-4 p-0 pr-sm-5 text-center">
-                <img data-aos="flip-left" class="img-fluid rounded shadow" src="img/about_me.webp" alt="Sitesh mehta"/>
+                <img data-aos="flip-left" class="img-fluid rounded shadow" src="https://drive.google.com/uc?export=view&id=1Rhx_lLx--T3OCzNY07aJRIBnCEpM3B14" alt="Sitesh mehta"/>
             </div>
             
             
@@ -332,7 +333,10 @@
 </html>  
 <script>
     $( document ).ready(function() {
-        AOS.init();
+        AOS.init({
+            offset: 40,
+            duration: 1000,
+        });
         $('body').scrollspy({ target: '#navbar' });   
         $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () { 
           $(".nav-link").removeClass("active");
